@@ -23,7 +23,7 @@ try:
                 price_tag = mobile.find('span')
                 price = price_tag.text.strip()
                 mobile_data.append([title, price])
-    csv_file = 'mobile_data.csv'
+    csv_file = '~/mobile_data.csv'
     with open(csv_file, 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Model', 'Price'])
