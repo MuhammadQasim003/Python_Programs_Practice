@@ -5,7 +5,13 @@ from dispaly_result import print_month_result, print_year_result
 
 
 def get_year_record(address, year, month):  
-    ''' this function will get the year record from loaded data '''
+    """
+    this function will get the year record from loaded data
+    Args:
+        address (str): use to get the root address for the data directory
+        year (str): get the desired year argument for the directory 
+        month (str): get the desired month argument for the directory 
+    """    
     data = data_loading(address, year, month)
     max_temprature_index = data['Max TemperatureC'].idxmax()
     min_temprature_index = data['Min TemperatureC'].idxmin()
@@ -25,7 +31,14 @@ def get_year_record(address, year, month):
     print_year_result(max_temprature,max_temperature_month,max_temperature_day,min_temprature,min_temperature_month,min_temperature_day,max_humidity,max_humidity_month,max_humidity_day)
 
 def get_month_record(address, year, month): 
-    ''' this function will get the month record from loaded data '''
+    """
+    this function will get the month record from loaded data
+    Args:
+        address (str): use to get the root address for the data directory
+        year (str): get the desired year argument for the directory 
+        month (str): get the desired month argument for the directory 
+    """
+    
     data = data_loading(address, year, month)
     high_temprature_average = int(data['Max TemperatureC'].mean())
     low_temprature_average = int( data['Min TemperatureC'].mean())
