@@ -4,7 +4,9 @@ from print_record_chart import print_chart
 from data_extraction import get_month_record, get_year_record
 
 def main():
-    ''' this function will get the user argument and run the condition according to user arguments'''
+    """    
+        This function will get the user argument and run the condition according to user arguments
+    """    
     if sys.argv[1] == "-e":
         try:
             address = sys.argv[3]
