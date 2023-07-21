@@ -18,7 +18,13 @@ def print_year_result(max_temprature,max_temperature_month,max_temperature_day,m
     print("Humidity: {}% On {} {}".format(int(max_humidity), max_humidity_month, max_humidity_day))
 
 def print_month_result(high_temprature_average,low_temprature_average,max_humidity_average):
-    ''' this function will display the result of month '''
+    """
+    this function will display the result of month 
+    Args:
+        high_temprature_average (str): variable contain the average value of max temprature
+        low_temprature_average (str): variable contain the average value of min temprature
+        max_humidity_average (str): variable contain the average value of max humidity
+    """
     print("Highest Average: {}C".format(high_temprature_average))
     print("Lowest Average: {}C".format(low_temprature_average))
     print("Average Humidity: {}%".format(max_humidity_average))
