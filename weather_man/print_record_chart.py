@@ -1,8 +1,14 @@
 from fetch_data import data_loading
 
 def print_chart(address, year, month):
-    ''' this function will print the temprature chart use red color for high temprature and 
-    use blue color for low temprature'''
+    """
+    this function will print the temprature chart use red color for high temprature and 
+    use blue color for low temprature
+    Args:
+        address (str): use to get the root address for the data directory
+        year (str): get the desired year argument for the directory 
+        month (str): get the desired month argument for the directory 
+    """
     red_color = "\033[91m"
     blue_color = "\033[94m"
     reset_color = "\033[0m"
